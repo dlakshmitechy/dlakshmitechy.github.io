@@ -17,9 +17,7 @@ if (empty($result)) {
 		 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci";
 		$result = $db->query($sql);
 }
-// Set your email below
-$myemail = "ENTER_YOUR_EMAIL_HERE"; // Replace with your email
-
+$myemail = "hello@dentern.me"; 
 // Receive and sanitize input
 $name = mysqli_real_escape_string($db, $_POST['name']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
